@@ -355,11 +355,11 @@ html {
   background: #ffffff;
   text-transform: uppercase;
   color: #ec6432;
-  /* border-width: 2px;
-  border-style: solid;
-  border-color: #ec6432;
-  border-radius: 2px; */
-  /* box-shadow: 2px 2px; */
+}
+
+.clickable-acc:hover {
+  background: #ffffff;
+  color: #ec6432;
 }
 
 .question-text {
@@ -399,4 +399,8 @@ input[type=range] + .thumb.active .value {
 input:not([type]):focus:not([readonly]), input[type=text]:focus:not([readonly]), input[type=password]:focus:not([readonly]), input[type=email]:focus:not([readonly]), input[type=url]:focus:not([readonly]), input[type=time]:focus:not([readonly]), input[type=date]:focus:not([readonly]), input[type=datetime]:focus:not([readonly]), input[type=datetime-local]:focus:not([readonly]), input[type=tel]:focus:not([readonly]), input[type=number]:focus:not([readonly]), input[type=search]:focus:not([readonly]), textarea.materialize-textarea:focus:not([readonly]) {
     border-bottom: 1px solid #1e73be;
     box-shadow: 0 0px 0 0 #1e73be;
+}
+
+ul.dropdown-content.select-dropdown li span {
+    color: #1e73be; /* no need for !important :) */
 }

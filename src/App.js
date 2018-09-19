@@ -53,7 +53,7 @@ class App extends Component {
         <Header/>
         <Jumbotron/>
         {this.viewHashTable(this.props.view)}
-        <Footer/>
+        {/* <Footer/> */}
       </div>
     );
   }

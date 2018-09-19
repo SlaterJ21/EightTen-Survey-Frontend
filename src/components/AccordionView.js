@@ -10,7 +10,7 @@ class AccordionView extends Component {
         <Collapsible accordion>
           {viewData.map(item => {
             return (
-              <CollapsibleItem key={item.question} header={<span className="question-text clickable">{item.question}</span>} icon='question_answer'>
+              <CollapsibleItem key={item.question} header={<span className="question-text clickable-acc">{item.question}</span>} icon='question_answer'>
                 Answer: {`${item.answer}`}
                 <br></br>
                 Score: {`${item.score}`}

@@ -90,8 +90,9 @@ export const addQuestion = (question) => {
       const questionData = await response.json()
       if (question.type === 'mc' || question.type === 'nested') {
         let optionsObj = {
-          [questionData.id]: question.optionsArray
+          [questionData[0].id]: question.optionsArray
         }
+        console.log(optionsObj);
         fetch(`${API}multiple_choice`, {
           method: 'POST',
           body: JSON.stringify(optionsObj),
